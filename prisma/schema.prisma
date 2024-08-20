@@ -1,0 +1,62 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Category {
+  id        String     @id @default(cuid())
+  name      String     @unique
+  news      News[]
+  resources Resource[]
+  blogs     Blog[]
+}
+
+model News {
+  id          String   @id @default(cuid())
+  title       String
+  content     String
+  imageUrl    String? // Add this line
+  publishedAt DateTime @default(now())
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  href        String
+}
+
+model Resource {
+  id             String   @id @default(cuid())
+  title          String
+  description    String
+  bigDescription String // Add this line
+  url            String
+  imageUrl       String?
+  publishedAt    DateTime @default(now())
+  categoryId     String
+  category       Category @relation(fields: [categoryId], references: [id])
+}
+
+model Blog {
+  id          String   @id @default(cuid())
+  title       String
+  smallDesc   String
+  bigDesc     String
+  coverImage  String?
+  coverImage1 String?
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  category    Category @relation(fields: [categoryId], references: [id])
+  categoryId  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model User {
+  id    String @id @default(cuid())
+  name  String
+  blogs Blog[]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "blof",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.3.1",
+    "@editorjs/editorjs": "^2.30.5",
+    "@editorjs/header": "^2.8.7",
+    "@editorjs/image": "^2.9.3",
+    "@editorjs/list": "^1.10.0",
+    "@editorjs/paragraph": "^2.11.6",
+    "@hookform/resolvers": "^3.9.0",
+    "@prisma/client": "^5.18.0",
+    "@radix-ui/react-alert-dialog": "^1.1.1",
+    "@radix-ui/react-checkbox": "^1.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.1",
+    "@uploadthing/react": "^6.7.2",
+    "axios": "^1.7.4",
+    "class-variance-authority": "^0.7.0",
+    "cloudinary": "^2.4.0",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.1.8",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.5",
+    "next-cloudinary": "^6.10.0",
+    "prisma": "^5.18.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "ts-node": "^10.9.2",
+    "uploadthing": "^6.13.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.15.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.5.4"
+  }
+}
