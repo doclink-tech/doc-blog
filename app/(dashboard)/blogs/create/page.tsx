@@ -1,10 +1,10 @@
-import { BlogForm } from '@/components/BlogForm'
-import React from 'react'
+// import { BlogForm } from '@/components/BlogForm'
+// import React from 'react'
 
-const page = () => {
-  return (
-    <BlogForm />
-  )
-}
+// const page = () => {
+//   return (
+//     <BlogForm />
+//   )
+// }
 
-export default page
+// export default page

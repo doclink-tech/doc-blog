@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <>
     <Hero />
-    <BlogGrid />
+    {/* <BlogGrid /> */}
     <NewsGrid />
     <ResourceGrid />
     </>
