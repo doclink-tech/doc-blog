@@ -9,10 +9,6 @@ const navLinks = [
     src: "/",
   },
   {
-    name: "blogs",
-    src: "/blogs",
-  },
-  {
     name: "News",
     src: "/news",
   },

@@ -16,8 +16,7 @@ const Navbar: React.FC = () => {
       <nav className="border-b">
         <div className="mx-auto px-4 py-3 flex flex-wrap justify-between items-center container">
           <div className="flex items-center gap-x-3">
-            <Image src="/logo.svg" alt="FutureTech Logo" width={40} height={40} />
-            <span className="ml-2 text-xl font-bold">FutureTech</span>
+            <Image src="/DOCLINK.svg" alt="FutureTech Logo" width={150} height={150} />
           </div>
           
           <div className="flex items-center md:hidden">
